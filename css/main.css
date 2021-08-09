@@ -300,6 +300,24 @@ summary {
   display: list-item;
 }
 
+.btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 12px 15px;
+  border-radius: 15px;
+  background-color: #fff503;
+  outline: none;
+  border-color: transparent;
+  border-width: 0;
+  -webkit-box-shadow: inset 0 1px 4px #000;
+          box-shadow: inset 0 1px 4px #000;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 0.86;
+}
+
 .container {
   margin: 0 auto;
   padding-left: 15px;
@@ -384,21 +402,6 @@ summary {
 
 .hero .hero__content-title_big {
   text-transform: uppercase;
-}
-
-.hero .hero-btn {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 3px 5px;
-  border-radius: 15px;
-  background-color: #fff503;
-  outline: none;
-  border-color: transparent;
-  cursor: pointer;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 1;
 }
 
 .about-us {
@@ -534,12 +537,15 @@ summary {
   padding-right: 15px;
 }
 
+.our-servises {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
 .our-servises .container {
   padding-top: 32px;
   padding-bottom: 32px;
   padding-left: 20px;
   padding-right: 20px;
-  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .our-servises .our-servises__title {
@@ -617,5 +623,75 @@ summary {
 
 .our-servises .our-servises__box-title_none-mb {
   margin-bottom: 0;
+}
+
+.corporative-clients {
+  background-color: #8c8989;
+}
+
+.corporative-clients .container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #fff;
+  text-shadow: 0px 1.63975px 1.63975px rgba(0, 0, 0, 0.25);
+}
+
+.corporative-clients .container .btn_corporative-clients {
+  margin-top: 25px;
+  margin-left: auto;
+  margin-right: 15px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.corporative-clients .corporative-clients__title-wrapper {
+  text-align: center;
+}
+
+.corporative-clients .corporative-clients__title {
+  display: inline-block;
+  text-align: end;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.13;
+  margin-bottom: 22px;
+}
+
+.corporative-clients .corporative-clients__title .corporative-clients__title-space {
+  width: 4px;
+  display: inline-block;
+}
+
+.corporative-clients .corporative-clients__title .corporative-clients__title-mod {
+  color: #fff503;
+}
+
+.corporative-clients .corporative-clients__list {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.23;
+  text-transform: uppercase;
+  padding-left: 50px;
+}
+
+.corporative-clients .corporative-clients__item {
+  position: relative;
+}
+
+.corporative-clients .corporative-clients__item:not(:last-of-type) {
+  margin-bottom: 25px;
+}
+
+.corporative-clients .corporative-clients__item:before {
+  content: "";
+  position: absolute;
+  left: -30px;
+  display: block;
+  width: 19px;
+  height: 19px;
+  background-image: url("../images/corporative-clients/mark.png");
+  background-repeat: no-repeat;
 }
 /*# sourceMappingURL=main.css.map */

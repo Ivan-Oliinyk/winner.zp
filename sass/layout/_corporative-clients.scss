@@ -1,0 +1,64 @@
+.corporative-clients {
+  background-color: #8c8989;
+
+  .container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #fff;
+    text-shadow: 0px 1.63975px 1.63975px rgba(0, 0, 0, 0.25);
+
+    .btn_corporative-clients {
+      margin-top: 25px;
+      margin-left: auto;
+      margin-right: 15px;
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+  }
+
+  .corporative-clients__title-wrapper {
+    text-align: center;
+  }
+
+  .corporative-clients__title {
+    display: inline-block;
+    text-align: end;
+    @include font($fs: 16px, $fw: 500, $lh: 18px);
+    margin-bottom: 22px;
+
+    .corporative-clients__title-space {
+      width: 4px;
+      display: inline-block;
+    }
+
+    .corporative-clients__title-mod {
+      color: #fff503;
+    }
+  }
+
+  .corporative-clients__list {
+    @include font($fs: 13px, $fw: 500, $lh: 16px);
+    text-transform: uppercase;
+    padding-left: 50px;
+  }
+
+  .corporative-clients__item {
+    position: relative;
+    &:not(:last-of-type) {
+      margin-bottom: 25px;
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      left: -30px;
+      display: block;
+      width: 19px;
+      height: 19px;
+      background-image: url("../images/corporative-clients/mark.png");
+      background-repeat: no-repeat;
+    }
+  }
+}
