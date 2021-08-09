@@ -376,9 +376,9 @@ summary {
 }
 
 .hero .hero__content-title {
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 400;
-  line-height: 1.2;
+  line-height: 1.13;
   text-align: center;
 }
 
@@ -412,9 +412,9 @@ summary {
 
 .about-us .about-us__title {
   position: relative;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
-  line-height: 1.07;
+  line-height: 0.94;
   text-align: center;
   text-transform: uppercase;
 }
@@ -477,15 +477,15 @@ summary {
 }
 
 .about-us .about-us__circle_4 {
-  top: 34px;
-  width: 108px;
-  height: 108px;
+  top: 40px;
+  width: 98px;
+  height: 98px;
 }
 
 .about-us .about-us__descr-title {
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 500;
-  line-height: 1.25;
+  line-height: 1.07;
   text-transform: uppercase;
   position: relative;
   margin-bottom: 15px;
@@ -526,11 +526,96 @@ summary {
 }
 
 .about-us .about-us__descr-text {
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 400;
-  line-height: 1;
+  line-height: 1.29;
   margin-bottom: 15px;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+.our-servises .container {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.our-servises .our-servises__title {
+  position: relative;
+  margin-left: 55px;
+  margin-bottom: 30px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.38;
+  text-transform: uppercase;
+  color: #fff503;
+}
+
+.our-servises .our-servises__title:before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -75px;
+  display: block;
+  width: 65px;
+  height: 12px;
+  background-color: #fff503;
+}
+
+.our-servises .our-servises__title:after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 125px;
+  display: block;
+  width: 21px;
+  height: 12px;
+  background-color: #fff503;
+}
+
+.our-servises .our-servises__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.our-servises .our-servises__box-svg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 40%;
+}
+
+.our-servises .our-servises__box-svg img {
+  margin-bottom: 12px;
+}
+
+.our-servises .our-servises__box-title {
+  max-width: 120px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.25;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.our-servises .our-servises__box-title_none-mb {
+  margin-bottom: 0;
 }
 /*# sourceMappingURL=main.css.map */

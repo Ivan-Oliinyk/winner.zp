@@ -23,7 +23,7 @@
 
   .hero__content-title {
     // font-family: "Cabin Condensed";
-    @include font($fs: 15px, $fw: 400, $lh: 18px);
+    @include font($fs: 16px, $fw: 400, $lh: 18px);
     text-align: center;
 
     &_big {
