@@ -1,0 +1,46 @@
+.hero {
+  margin: 0 auto;
+  padding-top: 83px;
+  background-color: #000;
+  background-position: center center;
+  background-size: cover;
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url("../images/hero-mobile.jpg");
+  width: 100%;
+  min-height: 250px;
+  color: #fff;
+
+  .hero__content {
+    max-width: 220px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 26px;
+  }
+
+  .hero__content-title {
+    // font-family: "Cabin Condensed";
+    @include font($fs: 15px, $fw: 400, $lh: 18px);
+    text-align: center;
+
+    &_big {
+      text-transform: uppercase;
+    }
+  }
+
+  .hero-btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3px 5px;
+    border-radius: 15px;
+    background-color: #fff503;
+    outline: none;
+    border-color: transparent;
+    cursor: pointer;
+    @include font($fs: 12px, $fw: 700, $lh: 12px);
+  }
+}

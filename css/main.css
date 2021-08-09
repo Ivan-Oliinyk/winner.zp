@@ -1,0 +1,536 @@
+@charset "UTF-8";
+/*! modern-normalize v1.0.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
+/* ===== ДОПОЛНЕНИЯ от Sandra Hrevtsova ===== */
+/* обнуляем дефолтные маркеры у всех маркированных списков */
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* обнуляем дефолтные подчеркивания у всех ссылок */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+code,
+kbd,
+samp,
+pre {
+  font-family: 'Open Sans', sans-serif;
+  /* font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace; 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* ===== ДОПОЛНЕНИЯ от Sandra Hrevtsova ===== */
+/*
+Document
+========
+*/
+/**
+Use a better box model (opinionated).
+*/
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/**
+Use a more readable tab size (opinionated).
+*/
+:root {
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+     tab-size: 4;
+}
+
+/**
+1. Correct the line height in all browsers.
+2. Prevent adjustments of font size after orientation changes in iOS.
+*/
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/*
+Sections
+========
+*/
+/**
+Remove the margin in all browsers.
+*/
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/**
+Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+*/
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+/*
+Grouping content
+================
+*/
+/**
+1. Add the correct height in Firefox.
+2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+*/
+hr {
+  height: 0;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+}
+
+/*
+Text-level semantics
+====================
+*/
+/**
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+abbr[title] {
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+/**
+Add the correct font weight in Edge and Safari.
+*/
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+1. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+2. Correct the odd 'em' font sizing in all browsers.
+*/
+/**
+Add the correct font size in all browsers.
+*/
+small {
+  font-size: 80%;
+}
+
+/**
+Prevent 'sub' and 'sup' elements from affecting the line height in all browsers.
+*/
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/*
+Tabular data
+============
+*/
+/**
+1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+*/
+table {
+  text-indent: 0;
+  /* 1 */
+  border-color: inherit;
+  /* 2 */
+}
+
+/*
+Forms
+=====
+*/
+/**
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+*/
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+address {
+  font-style: normal;
+}
+
+/**
+Remove the inheritance of text transform in Edge and Firefox.
+1. Remove the inheritance of text transform in Firefox.
+*/
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+Correct the inability to style clickable types in iOS and Safari.
+*/
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+  -webkit-appearance: button;
+}
+
+/**
+Remove the inner border and padding in Firefox.
+*/
+::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+Restore the focus styles unset by the previous rule.
+*/
+:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+Remove the additional ':invalid' styles in Firefox.
+See: https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737
+*/
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+/**
+Remove the padding so developers are not caught out when they zero out 'fieldset' elements in all browsers.
+*/
+legend {
+  padding: 0;
+}
+
+/**
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+progress {
+  vertical-align: baseline;
+}
+
+/**
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+[type='search'] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to 'inherit' in Safari.
+*/
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/*
+Interactive
+===========
+*/
+/*
+Add the correct display in Chrome and Safari.
+*/
+summary {
+  display: list-item;
+}
+
+.container {
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media screen and (max-width: 767.1px) {
+  .container {
+    max-width: 480px;
+  }
+}
+
+.header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+
+.header .header__logo {
+  margin-right: auto;
+}
+
+.header .header__burger-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 15px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.header .header__burger-btn .burger-line {
+  display: block;
+  width: 28px;
+  height: 3px;
+  background-color: #212121;
+}
+
+.header .header__burger-btn .burger-line:not(:last-of-type) {
+  margin-bottom: 3px;
+}
+
+.hero {
+  margin: 0 auto;
+  padding-top: 83px;
+  background-color: #000;
+  background-position: center center;
+  background-size: cover;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("../images/hero-mobile.jpg");
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/hero-mobile.jpg");
+  width: 100%;
+  min-height: 250px;
+  color: #fff;
+}
+
+.hero .hero__content {
+  max-width: 220px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 26px;
+}
+
+.hero .hero__content-title {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.hero .hero__content-title_big {
+  text-transform: uppercase;
+}
+
+.hero .hero-btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 3px 5px;
+  border-radius: 15px;
+  background-color: #fff503;
+  outline: none;
+  border-color: transparent;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.about-us {
+  padding-top: 21px;
+  padding-bottom: 21px;
+}
+
+.about-us .container {
+  padding: 0;
+}
+
+.about-us .about-us__title {
+  position: relative;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.07;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.about-us .about-us__title::before, .about-us .about-us__title::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  display: block;
+  width: 20%;
+  height: 7px;
+  background-color: #fff503;
+}
+
+.about-us .about-us__title::after {
+  right: 0;
+}
+
+.about-us .about-us__pictures {
+  position: relative;
+  min-height: 180px;
+}
+
+.about-us .about-us__pictures .about-us__pictures-car {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.about-us .about-us__pictures {
+  position: relative;
+}
+
+.about-us .about-us__circle {
+  position: absolute;
+  z-index: -1;
+  top: 10px;
+  right: 50%;
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+  border: 2px solid #fff503;
+  border-radius: 50%;
+  width: 158px;
+  height: 158px;
+}
+
+.about-us .about-us__circle_2 {
+  top: 20px;
+  border: 2px dashed #fff503;
+  width: 138px;
+  height: 138px;
+}
+
+.about-us .about-us__circle_3 {
+  top: 27px;
+  width: 123px;
+  height: 123px;
+}
+
+.about-us .about-us__circle_4 {
+  top: 34px;
+  width: 108px;
+  height: 108px;
+}
+
+.about-us .about-us__descr-title {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.25;
+  text-transform: uppercase;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.about-us .about-us__descr-title:after {
+  content: " ";
+  position: absolute;
+  top: 20px;
+  display: block;
+  width: 80%;
+  height: 3px;
+  background-color: #fff503;
+}
+
+.about-us .about-us__descr-title_first {
+  padding-left: 70px;
+}
+
+.about-us .about-us__descr-title_first:after {
+  left: 0;
+}
+
+.about-us .about-us__descr-title_second {
+  padding-left: 120px;
+}
+
+.about-us .about-us__descr-title_second:after {
+  right: 0;
+}
+
+.about-us .about-us__descr-title_third {
+  padding-left: 50px;
+}
+
+.about-us .about-us__descr-title_third:after {
+  left: 20px;
+}
+
+.about-us .about-us__descr-text {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1;
+  margin-bottom: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+/*# sourceMappingURL=main.css.map */

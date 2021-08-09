@@ -1,0 +1,123 @@
+.about-us {
+  .container {
+    padding: 0;
+  }
+
+  padding-top: 21px;
+  padding-bottom: 21px;
+  // .about-us-wrapper {
+  // }
+  .about-us__title {
+    position: relative;
+    @include font($fs: 14px, $fw: 500, $lh: 15px);
+    text-align: center;
+    text-transform: uppercase;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 5px;
+      display: block;
+      width: 20%;
+      height: 7px;
+      background-color: #fff503;
+    }
+
+    &::after {
+      right: 0;
+    }
+  }
+
+  .about-us__pictures {
+    position: relative;
+    min-height: 180px;
+
+    .about-us__pictures-car {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  .about-us__pictures {
+    position: relative;
+  }
+
+  .about-us__circle {
+    position: absolute;
+    z-index: -1;
+    top: 10px;
+    right: 50%;
+    transform: translateX(50%);
+    border: 2px solid #fff503;
+    border-radius: 50%;
+    width: 158px;
+    height: 158px;
+
+    &_1 {
+    }
+
+    &_2 {
+      top: 20px;
+      border: 2px dashed #fff503;
+      width: 138px;
+      height: 138px;
+    }
+    &_3 {
+      top: 27px;
+      width: 123px;
+      height: 123px;
+    }
+    &_4 {
+      top: 34px;
+      width: 108px;
+      height: 108px;
+    }
+  }
+
+  .about-us__descr-title {
+    @include font($fs: 12px, $fw: 500, $lh: 15px);
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 15px;
+    &:after {
+      content: " ";
+      position: absolute;
+      top: 20px;
+      display: block;
+      width: 80%;
+      height: 3px;
+      background-color: #fff503;
+    }
+  }
+
+  .about-us__descr-title_first {
+    padding-left: 70px;
+    &:after {
+      left: 0;
+    }
+  }
+
+  .about-us__descr-title_second {
+    padding-left: 120px;
+    &:after {
+      right: 0;
+    }
+  }
+
+  .about-us__descr-title_third {
+    padding-left: 50px;
+    &:after {
+      left: 20px;
+    }
+  }
+
+  .about-us__descr-text {
+    @include font($fs: 12px, $fw: 400, $lh: 12px);
+    margin-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
