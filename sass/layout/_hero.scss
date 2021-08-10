@@ -1,6 +1,10 @@
 .hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 0 auto;
-  padding-top: 83px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   background-color: #000;
   background-position: center center;
   background-size: cover;
@@ -22,7 +26,6 @@
   }
 
   .hero__content-title {
-    // font-family: "Cabin Condensed";
     @include font($fs: 16px, $fw: 400, $lh: 18px);
     text-align: center;
 
@@ -30,7 +33,65 @@
       text-transform: uppercase;
     }
   }
+}
 
-  .hero-btn {
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.6)
+      ),
+      url("../images/hero/hero-bg-tablet@x1.jpg");
+    min-height: 350px;
+
+    .hero__content-title {
+      @include font($fs: 20px, $fw: 500, $lh: 32px);
+    }
+
+    .hero__content {
+      min-width: 500px;
+    }
+  }
+}
+
+@media (min-device-pixel-rario: 2) and (min-width: 768px),
+  (min-resolution: 192dpi) and (min-width: 768px),
+  (min-resolution: 3dppx) and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.6)
+      ),
+      url("../images/hero/hero-bg-tablet@x2.jpg");
+  }
+}
+
+@media (min-device-pixel-ration: 3) and (min-width: 768px),
+  (min-resolution: 288dpi) and (min-width: 768px),
+  (min-resolution: 3dppx) and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.6)
+      ),
+      url("../images/hero/hero-bg-tablet@x3.jpg");
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    max-width: 1920px;
+    min-height: 600px;
+
+    .hero__content-title {
+      @include font($fs: 40px, $fw: 500, $lh: 49px);
+    }
+
+    .hero__content {
+      min-width: 1000px;
+    }
   }
 }

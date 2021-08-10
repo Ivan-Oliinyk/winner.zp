@@ -1,12 +1,13 @@
 .about-us {
+  max-width: 1920px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 21px;
+  padding-bottom: 21px;
   .container {
     padding: 0;
   }
 
-  padding-top: 21px;
-  padding-bottom: 21px;
-  // .about-us-wrapper {
-  // }
   .about-us__title {
     position: relative;
     @include font($fs: 16px, $fw: 500, $lh: 15px);
@@ -39,10 +40,6 @@
       left: 50%;
       transform: translate(-50%, -50%);
     }
-  }
-
-  .about-us__pictures {
-    position: relative;
   }
 
   .about-us__circle {
@@ -119,5 +116,248 @@
     margin-bottom: 15px;
     padding-left: 15px;
     padding-right: 15px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .about-us {
+    .about-us__title {
+      &::before,
+      &::after {
+        width: 35%;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about-us {
+    min-height: 400px;
+    .about-us-wrapper {
+      position: relative;
+    }
+
+    .about-us__descr {
+      position: absolute;
+      max-width: 280px;
+
+      &_left {
+        top: 65px;
+        left: 25px;
+      }
+
+      &_right {
+        top: 65px;
+        right: 15px;
+      }
+
+      &_bottom-center {
+        top: 200px;
+        left: 250px;
+      }
+    }
+
+    .about-us__descr-title {
+      &:after {
+        width: 95%;
+      }
+    }
+
+    .about-us__descr-title_first {
+      padding-left: 20px;
+      &:after {
+        left: 15px;
+      }
+    }
+
+    .about-us__descr-title_second {
+      padding-left: 20px;
+      &:after {
+        right: 25px;
+      }
+    }
+
+    .about-us__descr-title_third {
+      padding-left: 30px;
+      &:after {
+        left: 0;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about-us {
+    min-height: 700px;
+
+    .about-us__title {
+      @include font($fs: 24px, $fw: 500, $lh: 24px);
+
+      &::before,
+      &::after {
+        top: 10px;
+      }
+    }
+
+    .about-us__descr {
+      min-width: 400px;
+    }
+
+    .about-us__descr-title {
+      @include font($fs: 18px, $fw: 500, $lh: 32px);
+    }
+
+    .about-us__descr-text {
+      @include font($fs: 18px, $fw: 400, $lh: 22px);
+    }
+
+    .about-us__pictures {
+      position: relative;
+      min-height: 180px;
+
+      .about-us__pictures-car {
+        top: 200px;
+      }
+    }
+
+    .about-us__circle {
+      top: 50px;
+      width: 320px;
+      height: 320px;
+
+      &_2 {
+        top: 70px;
+        width: 280px;
+        height: 280px;
+      }
+      &_3 {
+        top: 80px;
+        width: 260px;
+        height: 260px;
+      }
+      &_4 {
+        top: 95px;
+        width: 230px;
+        height: 230px;
+      }
+    }
+
+    .about-us__descr {
+      position: absolute;
+      max-width: 280px;
+
+      &_left {
+        top: 170px;
+        left: 35px;
+      }
+
+      &_right {
+        top: 170px;
+        right: 20px;
+      }
+
+      &_bottom-center {
+        top: 400px;
+        left: 400px;
+      }
+    }
+
+    .about-us__descr-title {
+      &:after {
+        width: 105%;
+        top: 35px;
+      }
+    }
+
+    .about-us__descr-title_first {
+      padding-left: 50px;
+      &:after {
+        left: -15px;
+      }
+    }
+
+    .about-us__descr-title_second {
+      padding-left: 40px;
+      &:after {
+        right: 0;
+      }
+    }
+
+    .about-us__descr-title_third {
+      padding-left: 40px;
+      &:after {
+        left: -20px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .about-us {
+    padding-top: 60px;
+
+    .about-us__title {
+      @include font($fs: 28px, $fw: 500, $lh: 24px);
+    }
+
+    .about-us__descr {
+      min-width: 700px;
+    }
+
+    .about-us__descr-title {
+      @include font($fs: 22px, $fw: 500, $lh: 32px);
+    }
+
+    .about-us__descr-text {
+      @include font($fs: 20px, $fw: 400, $lh: 22px);
+    }
+
+    .about-us__descr {
+      position: absolute;
+      max-width: 280px;
+
+      &_left {
+        top: 170px;
+        left: 35px;
+      }
+
+      &_right {
+        top: 170px;
+        right: 20px;
+      }
+
+      &_bottom-center {
+        top: 400px;
+        left: 700px;
+      }
+    }
+
+    .about-us__descr-title {
+      &:after {
+        width: 110%;
+        top: 35px;
+      }
+    }
+
+    .about-us__descr-title_first {
+      padding-left: 50px;
+      &:after {
+        left: -5px;
+      }
+    }
+
+    .about-us__descr-title_second {
+      padding-left: 40px;
+      &:after {
+        right: 0;
+      }
+    }
+
+    .about-us__descr-title_third {
+      padding-left: 40px;
+      &:after {
+        left: -80px;
+      }
+    }
   }
 }

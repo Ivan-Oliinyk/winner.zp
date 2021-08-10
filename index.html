@@ -50,12 +50,18 @@
 
       <!-- ABOUT US -->
       <section class="about-us">
+        <h2 class="about-us__title">WINNER АВТОСЕРВИС</h2>
         <div class="container">
           <div class="about-us-wrapper">
-            <h2 class="about-us__title">WINNER АВТОСЕРВИС</h2>
             <div class="about-us__pictures">
               <picture class="about-us__pictures-car">
-                <!-- <source srcset="./images/hero/hero-car@x1.png 1x" media = "(min-width: 768px)" type= "image/png"/> -->
+                <source
+                  srcset="./images/hero/hero-car-tablet@x3.png"
+                  media="(min-width: 1200px)"
+                  width="360"
+                  height="346"
+                  type="image/png"
+                />
                 <img src="./images/hero/hero-car@x1.png" alt="Фото машины" />
               </picture>
               <div class="about-us__circle about-us__circle_1"></div>
@@ -63,7 +69,7 @@
               <div class="about-us__circle about-us__circle_3"></div>
               <div class="about-us__circle about-us__circle_4"></div>
             </div>
-            <div class="about-us__descr">
+            <div class="about-us__descr about-us__descr_left">
               <h3 class="about-us__descr-title about-us__descr-title_first">
                 Квалифицированный персонал
               </h3>
@@ -72,7 +78,7 @@
                 которые отвечают интересам даже самых требовательных клиентов!
               </p>
             </div>
-            <div class="about-us__descr">
+            <div class="about-us__descr about-us__descr_right">
               <h3 class="about-us__descr-title about-us__descr-title_second">
                 Соблюдение сроков работы
               </h3>
@@ -82,7 +88,7 @@
                 всех работ!
               </p>
             </div>
-            <div class="about-us__descr">
+            <div class="about-us__descr about-us__descr_bottom-center">
               <h3 class="about-us__descr-title about-us__descr-title_third">
                 Прозрачное ценообразование
               </h3>
@@ -101,8 +107,8 @@
       <section class="our-servises">
         <div class="container">
           <h2 class="our-servises__title">НАШИ УСЛУГИ</h2>
-          <div class="our-servises__wrapper">
-            <div class="our-servises__box-svg">
+          <ul class="our-servises__wrapper">
+            <li class="our-servises__box-svg">
               <img
                 src="./images/about-us/maintenance.svg"
                 alt="Картинка услуги Техническое обслуживание"
@@ -110,8 +116,8 @@
                 height="58"
               />
               <h3 class="our-servises__box-title">Техническое обслуживание</h3>
-            </div>
-            <div class="our-servises__box-svg">
+            </li>
+            <li class="our-servises__box-svg">
               <img
                 src="./images/about-us/computer-diagnostics.svg"
                 alt="Картинка услуги Компьютерная диагностика"
@@ -119,8 +125,8 @@
                 height="58"
               />
               <h3 class="our-servises__box-title">Компьютерная диагностика</h3>
-            </div>
-            <div class="our-servises__box-svg">
+            </li>
+            <li class="our-servises__box-svg">
               <img
                 src="./images/about-us/maintenance-and-repair.svg"
                 alt="Картинка услуги обслуживание и ремонт ДВС"
@@ -128,8 +134,8 @@
                 height="58"
               />
               <h3 class="our-servises__box-title">обслуживание и ремонт ДВС</h3>
-            </div>
-            <div class="our-servises__box-svg">
+            </li>
+            <li class="our-servises__box-svg">
               <img
                 src="./images/about-us/refueling.svg"
                 alt="Картинка услуги заправка автокондиционера"
@@ -137,8 +143,8 @@
                 height="58"
               />
               <h3 class="our-servises__box-title">заправка автокондиционера</h3>
-            </div>
-            <div class="our-servises__box-svg">
+            </li>
+            <li class="our-servises__box-svg">
               <img
                 src="./images/about-us/electrician-services.svg"
                 alt="Картинка услуги услуги электрика"
@@ -146,7 +152,7 @@
                 height="58"
               />
               <h3 class="our-servises__box-title">услуги электрика</h3>
-            </div>
+            </li>
             <div class="our-servises__box-svg">
               <img
                 src="./images/about-us/injector-cleaning.svg"
@@ -156,7 +162,7 @@
               />
               <h3 class="our-servises__box-title">чистка инжектора</h3>
             </div>
-            <div class="our-servises__box-svg">
+            <li class="our-servises__box-svg">
               <img
                 src="./images/about-us/descent-camber.svg"
                 alt="Картинка услуги сход развал 3D"
@@ -164,8 +170,8 @@
                 height="58"
               />
               <h3 class="our-servises__box-title">сход развал 3D</h3>
-            </div>
-            <div class="our-servises__box-svg">
+            </li>
+            <li class="our-servises__box-svg">
               <img
                 src="./images/about-us/suspension-repair.svg"
                 alt="Картинка услуги ремонт подвески"
@@ -173,8 +179,8 @@
                 height="58"
               />
               <h3 class="our-servises__box-title">ремонт подвески</h3>
-            </div>
-            <div class="our-servises__box-svg">
+            </li>
+            <li class="our-servises__box-svg">
               <img
                 src="./images/about-us/tire-storage.svg"
                 alt="Картинка услуги хранение шин"
@@ -186,8 +192,8 @@
               >
                 хранение шин
               </h3>
-            </div>
-            <div class="our-servises__box-svg">
+            </li>
+            <li class="our-servises__box-svg">
               <img
                 src="./images/about-us/tire-fitting.svg"
                 alt="Картинка услуги шиномонтаж"
@@ -199,8 +205,8 @@
               >
                 шиномонтаж
               </h3>
-            </div>
-          </div>
+            </li>
+          </ul>
         </div>
       </section>
       <!-- END OUR-SERVISES -->

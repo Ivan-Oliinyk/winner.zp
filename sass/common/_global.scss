@@ -12,3 +12,9 @@
   cursor: pointer;
   @include font($fs: 14px, $fw: 700, $lh: 12px);
 }
+
+@media screen and (min-width: 1200px) {
+  .btn {
+    @include font($fs: 18px, $fw: 700, $lh: 20px);
+  }
+}
