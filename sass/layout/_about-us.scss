@@ -91,14 +91,14 @@
   }
 
   .about-us__descr-title_first {
-    padding-left: 70px;
+    padding-left: 30px;
     &:after {
       left: 0;
     }
   }
 
   .about-us__descr-title_second {
-    padding-left: 120px;
+    padding-left: 80px;
     &:after {
       right: 0;
     }
@@ -124,7 +124,7 @@
     .about-us__title {
       &::before,
       &::after {
-        width: 35%;
+        width: 30%;
       }
     }
   }
@@ -349,7 +349,7 @@
     .about-us__descr-title_second {
       padding-left: 40px;
       &:after {
-        right: 0;
+        right: 10px;
       }
     }
 
