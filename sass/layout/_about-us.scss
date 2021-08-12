@@ -78,7 +78,9 @@
     @include font($fs: 14px, $fw: 500, $lh: 15px);
     text-transform: uppercase;
     position: relative;
+    margin-top: 30px;
     margin-bottom: 15px;
+
     &:after {
       content: " ";
       position: absolute;
@@ -92,6 +94,7 @@
 
   .about-us__descr-title_first {
     padding-left: 30px;
+    margin-top: 0;
     &:after {
       left: 0;
     }
@@ -172,6 +175,7 @@
 
     .about-us__descr-title_second {
       padding-left: 20px;
+      margin-top: 0;
       &:after {
         right: 25px;
       }
@@ -179,6 +183,7 @@
 
     .about-us__descr-title_third {
       padding-left: 30px;
+      margin-top: 30px;
       &:after {
         left: 0;
       }
