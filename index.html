@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Winner</title>
+    <link rel="shortcut icon" href="./images/short-icon.png" type="image/png" />
     <link rel="stylesheet" href="./css/main.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -56,13 +57,50 @@
             <div class="about-us__pictures">
               <picture class="about-us__pictures-car">
                 <source
-                  srcset="./images/hero/hero-car-tablet@x3.png"
+                  srcset="
+                    ./images/hero/hero-car-tablet@x1.webp 1x,
+                    ./images/hero/hero-car-tablet@x2.webp 2x,
+                    ./images/hero/hero-car-tablet@x3.webp 3x
+                  "
+                  media="(min-width: 1200px)"
+                  width="360"
+                  height="346"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/hero/hero-car-tablet@x1.png 1x,
+                    ./images/hero/hero-car-tablet@x2.png 2x,
+                    ./images/hero/hero-car-tablet@x3.png 3x
+                  "
                   media="(min-width: 1200px)"
                   width="360"
                   height="346"
                   type="image/png"
                 />
-                <img src="./images/hero/hero-car@x1.png" alt="Фото машины" />
+                <source
+                  srcset="
+                    ./images/hero/hero-car@x1.webp 1x,
+                    ./images/hero/hero-car@x2.webp 2x,
+                    ./images/hero/hero-car@x3.webp 3x
+                  "
+                  media="(max-width: 1199px)"
+                  width="190"
+                  height="190"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/hero/hero-car@x1.png 1x,
+                    ./images/hero/hero-car@x2.png 2x,
+                    ./images/hero/hero-car@x3.png 3x
+                  "
+                  media="(max-width: 1199px)"
+                  width="190"
+                  height="190"
+                  type="image/png"
+                />
+                <img src="./images/hero/hero-car@x3.png" alt="Фото машины" />
               </picture>
               <div class="about-us__circle about-us__circle_1"></div>
               <div class="about-us__circle about-us__circle_2"></div>
@@ -107,86 +145,105 @@
       <section class="our-servises">
         <div class="container">
           <h2 class="our-servises__title">НАШИ УСЛУГИ</h2>
+          <div></div>
           <ul class="our-servises__wrapper">
             <li class="our-servises__box-svg">
-              <img
-                src="./images/about-us/maintenance.svg"
-                alt="Картинка услуги Техническое обслуживание"
-                width="58"
-                height="58"
-              />
+              <div class="our-servises__box-svg-wrapper">
+                <img
+                  src="./images/about-us/1.png"
+                  alt="Картинка услуги Техническое обслуживание"
+                  width="51"
+                  height="52"
+                />
+              </div>
               <h3 class="our-servises__box-title">Техническое обслуживание</h3>
             </li>
             <li class="our-servises__box-svg">
-              <img
-                src="./images/about-us/computer-diagnostics.svg"
-                alt="Картинка услуги Компьютерная диагностика"
-                width="58"
-                height="58"
-              />
+              <div class="our-servises__box-svg-wrapper">
+                <img
+                  src="./images/about-us/2.png"
+                  alt="Картинка услуги Компьютерная диагностика"
+                  width="63"
+                  height="42"
+                />
+              </div>
               <h3 class="our-servises__box-title">Компьютерная диагностика</h3>
             </li>
             <li class="our-servises__box-svg">
-              <img
-                src="./images/about-us/maintenance-and-repair.svg"
-                alt="Картинка услуги обслуживание и ремонт ДВС"
-                width="58"
-                height="58"
-              />
+              <div class="our-servises__box-svg-wrapper">
+                <img
+                  src="./images/about-us/3.png"
+                  alt="Картинка услуги обслуживание и ремонт ДВС"
+                  width="48"
+                  height="52"
+                />
+              </div>
               <h3 class="our-servises__box-title">обслуживание и ремонт ДВС</h3>
             </li>
             <li class="our-servises__box-svg">
-              <img
-                src="./images/about-us/refueling.svg"
-                alt="Картинка услуги заправка автокондиционера"
-                width="58"
-                height="58"
-              />
+              <div class="our-servises__box-svg-wrapper">
+                <img
+                  src="./images/about-us/4.png"
+                  alt="Картинка услуги заправка автокондиционера"
+                  width="62"
+                  height="46"
+                />
+              </div>
               <h3 class="our-servises__box-title">заправка автокондиционера</h3>
             </li>
             <li class="our-servises__box-svg">
-              <img
-                src="./images/about-us/electrician-services.svg"
-                alt="Картинка услуги услуги электрика"
-                width="58"
-                height="58"
-              />
+              <div class="our-servises__box-svg-wrapper">
+                <img
+                  src="./images/about-us/5.png"
+                  alt="Картинка услуги услуги электрика"
+                  width="47"
+                  height="47"
+                />
+              </div>
               <h3 class="our-servises__box-title">услуги электрика</h3>
             </li>
             <div class="our-servises__box-svg">
-              <img
-                src="./images/about-us/injector-cleaning.svg"
-                alt="Картинка услуги чистка инжектора"
-                width="58"
-                height="58"
-              />
+              <div class="our-servises__box-svg-wrapper">
+                <img
+                  src="./images/about-us/6.png"
+                  alt="Картинка услуги чистка инжектора"
+                  width="32"
+                  height="60"
+                />
+              </div>
               <h3 class="our-servises__box-title">чистка инжектора</h3>
             </div>
             <li class="our-servises__box-svg">
-              <img
-                src="./images/about-us/descent-camber.svg"
-                alt="Картинка услуги сход развал 3D"
-                width="58"
-                height="58"
-              />
+              <div class="our-servises__box-svg-wrapper">
+                <img
+                  src="./images/about-us/7.png"
+                  alt="Картинка услуги сход развал 3D"
+                  width="58"
+                  height="45"
+                />
+              </div>
               <h3 class="our-servises__box-title">сход развал 3D</h3>
             </li>
             <li class="our-servises__box-svg">
-              <img
-                src="./images/about-us/suspension-repair.svg"
-                alt="Картинка услуги ремонт подвески"
-                width="58"
-                height="58"
-              />
+              <div class="our-servises__box-svg-wrapper">
+                <img
+                  src="./images/about-us/8.png"
+                  alt="Картинка услуги ремонт подвески"
+                  width="48"
+                  height="58"
+                />
+              </div>
               <h3 class="our-servises__box-title">ремонт подвески</h3>
             </li>
             <li class="our-servises__box-svg">
-              <img
-                src="./images/about-us/tire-storage.svg"
-                alt="Картинка услуги хранение шин"
-                width="58"
-                height="58"
-              />
+              <div class="our-servises__box-svg-wrapper">
+                <img
+                  src="./images/about-us/10.png"
+                  alt="Картинка услуги хранение шин"
+                  width="63"
+                  height="46"
+                />
+              </div>
               <h3
                 class="our-servises__box-title our-servises__box-title_none-mb"
               >
@@ -194,12 +251,14 @@
               </h3>
             </li>
             <li class="our-servises__box-svg">
-              <img
-                src="./images/about-us/tire-fitting.svg"
-                alt="Картинка услуги шиномонтаж"
-                width="58"
-                height="58"
-              />
+              <div class="our-servises__box-svg-wrapper">
+                <img
+                  src="./images/about-us/9.png"
+                  alt="Картинка услуги шиномонтаж"
+                  width="58"
+                  height="57"
+                />
+              </div>
               <h3
                 class="our-servises__box-title our-servises__box-title_none-mb"
               >

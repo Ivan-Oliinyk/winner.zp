@@ -409,8 +409,6 @@ summary {
   background-color: #000;
   background-position: center center;
   background-size: cover;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("../images/hero-mobile.jpg");
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/hero-mobile.jpg");
   width: 100%;
   min-height: 250px;
   color: #fff;
@@ -432,6 +430,28 @@ summary {
 
 .hero .hero__content-title_big {
   text-transform: uppercase;
+}
+
+@media screen and (max-width: 767px) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("../images/hero/hero-bg-mobile@x1.jpg");
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/hero/hero-bg-mobile@x1.jpg");
+    min-height: 350px;
+  }
+}
+
+@media (min-device-pixel-rario: 2) and (max-width: 767px), (-webkit-min-device-pixel-ratio: 2) and (max-width: 767px), (min-resolution: 192dpi) and (max-width: 767px), (-webkit-min-device-pixel-ratio: 3) and (max-width: 767px), (min-resolution: 3dppx) and (max-width: 767px) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("../images/hero/hero-bg-mobile@x2.jpg");
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/hero/hero-bg-mobile@x2.jpg");
+  }
+}
+
+@media (min-device-pixel-ration: 3) and (max-width: 767px), (-webkit-min-device-pixel-ratio: 3) and (max-width: 767px), (min-resolution: 288dpi) and (max-width: 767px), (min-resolution: 3dppx) and (max-width: 767px) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("../images/hero/hero-bg-mobile@x3.jpg");
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/hero/hero-bg-mobile@x3.jpg");
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -890,6 +910,20 @@ summary {
   margin-bottom: 12px;
 }
 
+.our-servises .our-servises__box-svg-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 60px;
+  height: 60px;
+}
+
 .our-servises .our-servises__box-title {
   max-width: 120px;
   font-size: 12px;
@@ -930,12 +964,16 @@ summary {
     left: -210px;
     width: 200px;
   }
+  .our-servises .our-servises__title:after {
+    left: 165px;
+  }
   .our-servises .our-servises__box-svg {
     margin-bottom: 20px;
   }
   .our-servises .our-servises__box-svg img {
-    width: 105px;
-    height: 105px;
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+    margin-bottom: 40px;
   }
   .our-servises .our-servises__box-title {
     max-width: 150px;
@@ -948,6 +986,9 @@ summary {
 @media screen and (min-width: 1920px) {
   .our-servises .container {
     margin-bottom: -80px;
+  }
+  .our-servises .our-servises__title {
+    margin-left: 115px;
   }
   .our-servises .our-servises__box-svg {
     margin-bottom: 100px;
