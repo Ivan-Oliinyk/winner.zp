@@ -625,7 +625,7 @@ summary {
 .about-us .about-us__descr-text {
   font-size: 14px;
   font-weight: 400;
-  line-height: 1.29;
+  line-height: 1.71;
   margin-bottom: 15px;
   padding-left: 15px;
   padding-right: 15px;
@@ -706,7 +706,7 @@ summary {
   .about-us .about-us__descr-text {
     font-size: 18px;
     font-weight: 400;
-    line-height: 1.22;
+    line-height: 1.33;
   }
   .about-us .about-us__pictures {
     position: relative;
@@ -795,7 +795,7 @@ summary {
   .about-us .about-us__descr-text {
     font-size: 20px;
     font-weight: 400;
-    line-height: 1.1;
+    line-height: 1.7;
   }
   .about-us .about-us__descr {
     position: absolute;
@@ -1038,6 +1038,19 @@ summary {
   color: #fff503;
 }
 
+.corporative-clients .corporative-clients__content-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.corporative-clients .corporative-clients__img-wrapper {
+  display: none;
+}
+
 .corporative-clients .corporative-clients__list {
   font-size: 13px;
   font-weight: 500;
@@ -1057,11 +1070,68 @@ summary {
 .corporative-clients .corporative-clients__item:before {
   content: "";
   position: absolute;
-  left: -30px;
+  top: -43px;
+  left: -75px;
   display: block;
-  width: 19px;
-  height: 19px;
+  width: 107px;
+  height: 107px;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
   background-image: url("../images/corporative-clients/mark.png");
   background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 1200px) {
+  .corporative-clients .container {
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
+  .corporative-clients .corporative-clients__title {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.17;
+  }
+  .corporative-clients .corporative-clients__img-wrapper {
+    position: relative;
+    z-index: 1;
+    display: block;
+  }
+  .corporative-clients .corporative-clients__img-wrapper:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    bottom: -24px;
+    left: -39px;
+    display: block;
+    width: 240px;
+    height: 318px;
+    background-color: #fff503;
+  }
+  .corporative-clients .corporative-clients__list-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .corporative-clients .corporative-clients__list {
+    margin-top: 40px;
+  }
+  .corporative-clients .corporative-clients__list {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.78;
+  }
+  .corporative-clients .corporative-clients__item:before {
+    top: -35px;
+  }
+  .corporative-clients .btn_corporative-clients {
+    min-width: 300px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

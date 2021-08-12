@@ -38,6 +38,15 @@
     }
   }
 
+  .corporative-clients__content-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  .corporative-clients__img-wrapper {
+    display: none;
+  }
+
   .corporative-clients__list {
     @include font($fs: 13px, $fw: 500, $lh: 16px);
     text-transform: uppercase;
@@ -53,12 +62,68 @@
     &:before {
       content: "";
       position: absolute;
-      left: -30px;
+      top: -43px;
+      left: -75px;
       display: block;
-      width: 19px;
-      height: 19px;
+      width: 107px;
+      height: 107px;
+      transform: scale(0.25);
       background-image: url("../images/corporative-clients/mark.png");
       background-repeat: no-repeat;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .corporative-clients {
+    .container {
+      padding-top: 40px;
+      padding-bottom: 60px;
+    }
+
+    .corporative-clients__title {
+      @include font($fs: 24px, $fw: 600, $lh: 28px);
+    }
+
+    .corporative-clients__img-wrapper {
+      position: relative;
+      z-index: 1;
+      display: block;
+      &:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        bottom: -24px;
+        left: -39px;
+        display: block;
+        width: 240px;
+        height: 318px;
+        background-color: #fff503;
+      }
+    }
+
+    .corporative-clients__list-wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .corporative-clients__list {
+      margin-top: 40px;
+    }
+
+    .corporative-clients__list {
+      @include font($fs: 18px, $fw: 500, $lh: 32px);
+    }
+
+    .corporative-clients__item {
+      &:before {
+        top: -35px;
+      }
+    }
+
+    .btn_corporative-clients {
+      min-width: 300px;
     }
   }
 }

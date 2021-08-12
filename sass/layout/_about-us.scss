@@ -112,7 +112,7 @@
   }
 
   .about-us__descr-text {
-    @include font($fs: 14px, $fw: 400, $lh: 18px);
+    @include font($fs: 14px, $fw: 400, $lh: 24px);
     margin-bottom: 15px;
     padding-left: 15px;
     padding-right: 15px;
@@ -208,7 +208,7 @@
     }
 
     .about-us__descr-text {
-      @include font($fs: 18px, $fw: 400, $lh: 22px);
+      @include font($fs: 18px, $fw: 400, $lh: 24px);
     }
 
     .about-us__pictures {
@@ -309,7 +309,7 @@
     }
 
     .about-us__descr-text {
-      @include font($fs: 20px, $fw: 400, $lh: 22px);
+      @include font($fs: 20px, $fw: 400, $lh: 34px);
     }
 
     .about-us__descr {
