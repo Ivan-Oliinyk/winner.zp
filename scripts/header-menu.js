@@ -16,11 +16,9 @@
 
   menuLinks.forEach((elem) => {
     elem.addEventListener("click", () => {
-      menuBtnRef.classList.toggle("is-open");
-      mobileMEnuRef.classList.toggle("is-open");
-      document.body.classList.toggle("modal-open");
+      menuBtnRef.classList.remove("is-open");
+      mobileMEnuRef.classList.remove("is-open");
+      document.body.classList.remove("modal-open");
     });
   });
-
-  console.log(menuLinks);
 })();
