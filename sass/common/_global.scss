@@ -18,3 +18,7 @@
     @include font($fs: 18px, $fw: 700, $lh: 20px);
   }
 }
+
+.modal-open {
+  overflow: hidden;
+}

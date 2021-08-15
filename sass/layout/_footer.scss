@@ -24,6 +24,28 @@
       display: none;
     }
   }
+
+  .footer__link {
+    position: relative;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 0;
+      height: 3px;
+      background-color: $accent-color;
+      transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &:hover {
+      color: $accent-color;
+      &:after {
+        width: 100%;
+      }
+    }
+  }
 }
 
 @media screen and (min-width: 768px) {

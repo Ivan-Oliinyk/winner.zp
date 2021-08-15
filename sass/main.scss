@@ -3,9 +3,10 @@
 @import "./utils/_mixins";
 
 //COMPONENTS
-@import "./common/normalizer";
+@import "./components/btn-up";
 
 //COMMON
+@import "./common/normalizer";
 @import "./common/global";
 @import "./common/container";
 
@@ -18,3 +19,4 @@
 @import "./layout/fotogallary";
 @import "./layout/contacts";
 @import "./layout/_footer";
+@import "./layout/team";

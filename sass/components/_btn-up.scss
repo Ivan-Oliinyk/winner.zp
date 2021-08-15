@@ -1,0 +1,33 @@
+.btn-up {
+  .fa-arrow-circle-up {
+    color: #fff503;
+    font-size: 30px;
+    border-radius: 50%;
+    // border: 1px solid #fff503;
+    // background-color: #000;
+    box-shadow: 0 0 5px #000;
+  }
+
+  display: none;
+  position: fixed;
+  z-index: 5;
+  bottom: 15px;
+  right: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  .btn-up {
+    bottom: 70px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .btn-up {
+    bottom: 70px;
+    right: 5%;
+
+    .fa-arrow-circle-up {
+      font-size: 40px;
+    }
+  }
+}
