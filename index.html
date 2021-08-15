@@ -64,9 +64,9 @@
                 >+38 095 199 11 68</a
               >
             </div>
-            <button class="btn btn__header-consultation" type="button">
+            <a href="tel:+380951991168" class="btn btn__header-consultation">
               Позвонить мне
-            </button>
+            </a>
           </div>
         </div>
         <button
@@ -106,7 +106,9 @@
               индивидуальный подход к каждому клиенту и ремонту его автомобиля!
             </h1>
           </div>
-          <button class="btn hero-btn" type="button">Оставить заявку</button>
+          <button class="btn hero-btn" type="button" data-modal="consultation">
+            Оставить заявку
+          </button>
         </div>
       </section>
       <!-- END HERO -->
@@ -368,7 +370,11 @@
                 </li>
               </ul>
 
-              <button class="btn btn_corporative-clients" type="button">
+              <button
+                class="btn btn_corporative-clients"
+                type="button"
+                data-modal="consultation"
+              >
                 Узнать больше
               </button>
             </div>
@@ -598,6 +604,76 @@
       </div>
     </footer>
 
+    <!-- форма обратной связи -->
+    <div class="overlay">
+      <div class="consultation-form" id="consultation">
+        <button class="consultation-form__close" type="button">
+          <i class="far fa-times-circle"></i>
+        </button>
+        <img
+          class="consultation-form_img"
+          src="./images/logo3x.png"
+          alt="логотип фирмы"
+          width="120"
+          height="29"
+        />
+        <h2 class="consultation-form__title">
+          Мы готовы ответить на все ваши вопросы!
+        </h2>
+        <p class="consultation-form__descr">
+          Просто оставьте ваш номер телефона и наш менеджер вам перезвонит в
+          ближайшее время
+        </p>
+        <form class="form" method="GET">
+          <div class="form-field">
+            <input
+              class="form-input"
+              type="text"
+              name="name"
+              placeholder=" "
+              required
+            />
+            <label class="form-label" for="name">Ваше имя:</label>
+          </div>
+          <div class="form-field">
+            <input
+              class="form-input"
+              type="tel"
+              name="tel"
+              placeholder=" "
+              required
+            />
+            <label class="form-label" for="tel">Ваш телефон:</label>
+          </div>
+          <div class="form-field">
+            <input
+              class="form-input"
+              type="email"
+              name="mail"
+              placeholder=" "
+              required
+            />
+            <label class="form-label" for="mail">Ваш email:</label>
+          </div>
+          <button class="btn form-submit" type="submit">Отправить</button>
+        </form>
+      </div>
+
+      <div class="consultation-form modal-order" id="thanks">
+        <button
+          class="consultation-form__close modal-order__close"
+          type="button"
+        >
+          <i class="far fa-times-circle"></i>
+        </button>
+        <h2 class="modal-order__title">Спасибо за вашу заявку !</h2>
+        <p class="modal-order__textr">
+          Наш менеджер свяжется с вами в ближайшее время !
+        </p>
+      </div>
+    </div>
+
+    <!-- плавающие ссылка вверх страницы -->
     <a href="#up" class="btn-up" id="toTop">
       <i class="fas fa-arrow-circle-up"></i>
     </a>

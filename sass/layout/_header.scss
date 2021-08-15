@@ -52,6 +52,10 @@
   .header__content-list {
     display: flex;
   }
+
+  .btn__header-consultation {
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 767.9px) {
@@ -136,6 +140,9 @@
     .btn__header-consultation {
       margin-top: 20px;
       @include font($fs: 18px, $fw: 600, $lh: 18px);
+      color: #000;
+      display: inline-block;
+      min-width: 250px;
     }
   }
 }

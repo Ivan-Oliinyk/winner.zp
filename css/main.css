@@ -31,6 +31,167 @@
   }
 }
 
+#consultation {
+  display: none;
+}
+
+.consultation-form {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  padding: 26px 23px;
+  max-width: 300px;
+  background-color: #fff;
+}
+
+.consultation-form .consultation-form_img {
+  margin-bottom: 20px;
+}
+
+.consultation-form .consultation-form__close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: transparent;
+  border: none;
+  font-size: 30px;
+  padding: 10px;
+  cursor: pointer;
+  color: #e9c12f;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.consultation-form .consultation-form__close:hover, .consultation-form .consultation-form__close:focus {
+  color: #b02f2f;
+}
+
+.consultation-form .consultation-form__title {
+  position: relative;
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.29;
+  text-align: center;
+}
+
+.consultation-form .consultation-form__title:after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -5px;
+  background-color: #fff503;
+  width: 100%;
+  height: 2px;
+}
+
+.consultation-form .consultation-form__descr {
+  margin-bottom: 30px;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.38;
+  text-align: center;
+}
+
+.consultation-form .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.consultation-form .form-field {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.consultation-form .form-input {
+  padding: 5px 10px;
+  min-width: 235px;
+  background-color: #fff503;
+  border: none;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14;
+  -webkit-box-shadow: 1px 1px 2px #000;
+          box-shadow: 1px 1px 2px #000;
+}
+
+.consultation-form .form-input:focus + .form-label,
+.consultation-form .form-input:not(:placeholder-shown) + .form-label {
+  top: -20px;
+  left: 0;
+}
+
+.consultation-form .form-label {
+  position: absolute;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14;
+  top: 5px;
+  left: 10px;
+  -webkit-transition: top 250ms cubic-bezier(0.4, 0, 0.2, 1), left 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: top 250ms cubic-bezier(0.4, 0, 0.2, 1), left 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-order {
+  padding-top: 45px;
+  border-radius: 5px;
+}
+
+.modal-order .modal-order__title {
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 19px;
+  font-weight: 600;
+  line-height: 1.05;
+}
+
+.modal-order .modal-order__textr {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.56;
+}
+
+@media screen and (min-width: 360px) {
+  .consultation-form {
+    min-width: 340px;
+  }
+  .consultation-form .form-input {
+    padding: 5px 10px;
+    min-width: 285px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .consultation-form {
+    min-width: 420px;
+  }
+  .consultation-form .consultation-form__title {
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 1.06;
+  }
+  .consultation-form .consultation-form__descr {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.75;
+  }
+  .consultation-form .form-input {
+    padding: 7px 10px;
+    min-width: 285px;
+  }
+}
+
 /*! modern-normalize v1.0.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 /* ===== ДОПОЛНЕНИЯ от Sandra Hrevtsova ===== */
 /* обнуляем дефолтные маркеры у всех маркированных списков */
@@ -339,7 +500,6 @@ summary {
   padding: 12px 15px;
   border-radius: 15px;
   background-color: #fff503;
-  outline: none;
   border-color: transparent;
   border-width: 0;
   -webkit-box-shadow: inset 0 1px 4px #000;
@@ -384,6 +544,18 @@ summary {
   .container {
     max-width: 1920px;
   }
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  z-index: 11;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .header .container {
@@ -455,6 +627,10 @@ summary {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.header .btn__header-consultation {
+  text-align: center;
 }
 
 @media screen and (max-width: 767.9px) {
@@ -534,6 +710,9 @@ summary {
     font-size: 18px;
     font-weight: 600;
     line-height: 1;
+    color: #000;
+    display: inline-block;
+    min-width: 250px;
   }
 }
 
