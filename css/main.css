@@ -200,6 +200,43 @@
   }
 }
 
+.btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 12px 15px;
+  border-radius: 15px;
+  background-color: #fff503;
+  border-color: transparent;
+  border-width: 0;
+  -webkit-box-shadow: inset 0 1px 4px #000;
+          box-shadow: inset 0 1px 4px #000;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 0.86;
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), text-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), text-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn:hover, .btn:focus {
+  background-color: #d2cc0b;
+  text-shadow: 1px 1px 1px #fff;
+  color: #000;
+}
+
+@media screen and (min-width: 1200px) {
+  .btn {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.11;
+  }
+}
+
+.modal-open {
+  overflow: hidden;
+}
+
 /*! modern-normalize v1.0.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 /* ===== ДОПОЛНЕНИЯ от Sandra Hrevtsova ===== */
 /* обнуляем дефолтные маркеры у всех маркированных списков */
@@ -501,35 +538,6 @@ summary {
   display: list-item;
 }
 
-.btn {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 12px 15px;
-  border-radius: 15px;
-  background-color: #fff503;
-  border-color: transparent;
-  border-width: 0;
-  -webkit-box-shadow: inset 0 1px 4px #000;
-          box-shadow: inset 0 1px 4px #000;
-  cursor: pointer;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 0.86;
-}
-
-@media screen and (min-width: 1200px) {
-  .btn {
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 1.11;
-  }
-}
-
-.modal-open {
-  overflow: hidden;
-}
-
 .container {
   margin: 0 auto;
   padding-left: 15px;
@@ -564,6 +572,14 @@ summary {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6);
+}
+
+.d-none {
+  display: none;
+}
+
+.d-block {
+  display: block;
 }
 
 .header .container {
@@ -2033,9 +2049,35 @@ summary {
 .team .team__item {
   margin-right: 15px;
   margin-bottom: 15px;
+  padding: 5px;
+  -webkit-box-shadow: 0 0 6px transparent;
+          box-shadow: 0 0 6px transparent;
+  border-radius: 5px;
+  -webkit-transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.team .team__link-content {
+.team .team__item:hover, .team .team__item:focus {
+  -webkit-box-shadow: 0 0 6px grey;
+          box-shadow: 0 0 6px grey;
+}
+
+.team .team__btn {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.team .team__btn-img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.team .team__btn-content {
   max-width: 130px;
   padding-top: 5px;
   padding-bottom: 10px;
@@ -2043,14 +2085,85 @@ summary {
   padding-right: 5px;
 }
 
-.team .team__link-title {
+.team .team__btn-title {
   text-transform: uppercase;
   font-size: 12px;
   font-weight: 500;
   line-height: 1.67;
 }
 
-.team .team__link-descr {
+.team .team__btn-descr {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.67;
+}
+
+.team__modal {
+  display: block;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
+.team__modal.d-block {
+  display: block;
+}
+
+.team__modal.d-none {
+  display: none;
+}
+
+.team__modal .team__modal-container {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  padding: 10px 10px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.team__modal .team__modal-close {
+  position: absolute;
+  top: -50px;
+  right: -35px;
+  padding: 15px;
+  background-color: transparent;
+  border: none;
+  font-size: 30px;
+  color: #e33f3f;
+  cursor: pointer;
+}
+
+.team__modal .team__modal-img {
+  float: left;
+  margin-right: 10px;
+}
+
+.team__modal .team__btn-img {
+  margin-top: 5px;
+  width: 130px;
+  height: 178px;
+}
+
+.team__modal .team__btn-content {
+  max-width: 100%;
+}
+
+.team__modal .team__btn-title {
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.82;
+  line-height: 1.2;
+  margin-bottom: 5px;
+}
+
+.team__modal .team__btn-descr {
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.team__modal .team__btn-descr-sub {
   font-size: 12px;
   font-weight: 400;
   line-height: 1.67;
@@ -2069,13 +2182,13 @@ summary {
   .team .team__item:nth-of-type(3) {
     margin-right: 90px;
   }
-  .team .team__link-title {
+  .team .team__btn-title {
     text-transform: uppercase;
     font-size: 14px;
     font-weight: 500;
     line-height: 1.43;
   }
-  .team .team__link-descr {
+  .team .team__btn-descr {
     font-size: 14px;
     font-weight: 400;
     line-height: 1.43;
@@ -2103,7 +2216,7 @@ summary {
     right: -70px;
     width: 60px;
   }
-  .team .team__link-img {
+  .team .team__btn-img {
     width: 210px;
     height: 275px;
   }
@@ -2113,17 +2226,17 @@ summary {
   .team .team__item {
     margin-bottom: 50px;
   }
-  .team .team__link-content {
+  .team .team__btn-content {
     max-width: 230px;
   }
-  .team .team__link-title {
+  .team .team__btn-title {
     margin-bottom: 10px;
     text-transform: uppercase;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.25;
   }
-  .team .team__link-descr {
+  .team .team__btn-descr {
     font-size: 16px;
     font-weight: 400;
     line-height: 1.25;

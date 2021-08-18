@@ -5,12 +5,13 @@
 //COMPONENTS
 @import "./components/btn-up";
 @import "./components/consultation-form";
+@import "./components/btn";
 
 //COMMON
 @import "./common/normalizer";
-@import "./common/global";
 @import "./common/container";
 @import "./common/overlay";
+@import "./common/global";
 
 //LAYOUT
 @import "./layout/header";

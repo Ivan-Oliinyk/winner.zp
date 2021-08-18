@@ -1,23 +1,7 @@
-.btn {
+.d-none {
+  display: none;
+}
+
+.d-block {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 12px 15px;
-  border-radius: 15px;
-  background-color: #fff503;
-  border-color: transparent;
-  border-width: 0;
-  box-shadow: inset 0 1px 4px #000;
-  cursor: pointer;
-  @include font($fs: 14px, $fw: 700, $lh: 12px);
-}
-
-@media screen and (min-width: 1200px) {
-  .btn {
-    @include font($fs: 18px, $fw: 700, $lh: 20px);
-  }
-}
-
-.modal-open {
-  overflow: hidden;
 }
