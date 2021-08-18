@@ -56,6 +56,7 @@
     border: none;
     background-color: transparent;
     cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
   }
 
   .team__btn-img {
@@ -175,6 +176,34 @@
       @include font($fs: 14px, $fw: 400, $lh: 20px);
     }
   }
+
+  .team__modal {
+    .team__modal-container {
+      padding-left: 15px;
+      padding-right: 15px;
+      min-height: 375px;
+    }
+
+    .team__btn-img {
+      margin-right: 20px;
+      width: 260px;
+      height: 354px;
+    }
+
+    .team__btn-title {
+      text-transform: uppercase;
+      @include font($fs: 16px, $fw: 500, $lh: 20px);
+    }
+
+    .team__btn-descr {
+      @include font($fs: 16px, $fw: 400, $lh: 20px);
+      margin-bottom: 15px;
+    }
+
+    .team__btn-descr-sub {
+      @include font($fs: 15px, $fw: 400, $lh: 26px);
+    }
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -226,6 +255,13 @@
 
     .team__btn-descr {
       @include font($fs: 16px, $fw: 400, $lh: 20px);
+    }
+  }
+
+  .team__modal {
+    display: flex;
+    .team__modal-img {
+      float: left;
     }
   }
 }

@@ -582,6 +582,10 @@ summary {
   display: block;
 }
 
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+
 .header .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2068,6 +2072,7 @@ summary {
   border: none;
   background-color: transparent;
   cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .team .team__btn-img {
@@ -2193,6 +2198,33 @@ summary {
     font-weight: 400;
     line-height: 1.43;
   }
+  .team__modal .team__modal-container {
+    padding-left: 15px;
+    padding-right: 15px;
+    min-height: 375px;
+  }
+  .team__modal .team__btn-img {
+    margin-right: 20px;
+    width: 260px;
+    height: 354px;
+  }
+  .team__modal .team__btn-title {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.25;
+  }
+  .team__modal .team__btn-descr {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.25;
+    margin-bottom: 15px;
+  }
+  .team__modal .team__btn-descr-sub {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.73;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -2240,6 +2272,14 @@ summary {
     font-size: 16px;
     font-weight: 400;
     line-height: 1.25;
+  }
+  .team__modal {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .team__modal .team__modal-img {
+    float: left;
   }
 }
 
