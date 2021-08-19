@@ -148,6 +148,30 @@
   .team__btn-descr-sub {
     @include font($fs: 12px, $fw: 400, $lh: 20px);
   }
+
+  .team__modal-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: inline-block;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 40px;
+    color: #d1cb13;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+
+    &_left {
+      left: 0;
+      padding-right: 15px;
+    }
+    &_right {
+      right: 0;
+      padding-left: 15px;
+    }
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -178,6 +202,9 @@
   }
 
   .team__modal {
+    padding-left: 65px;
+    padding-right: 65px;
+
     .team__modal-container {
       padding-left: 15px;
       padding-right: 15px;
@@ -262,6 +289,50 @@
     display: flex;
     .team__modal-img {
       float: left;
+    }
+  }
+
+  .team__modal {
+    display: block;
+    padding-left: 35px;
+    padding-right: 35px;
+
+    .team__modal-container {
+      max-width: 1000px;
+    }
+
+    .team__modal-img {
+      float: left;
+      margin-right: 10px;
+    }
+
+    .team__btn-img {
+      width: 390px;
+      height: 534px;
+    }
+
+    .team__modal-text {
+      min-height: 530px;
+    }
+
+    .team__btn-content {
+      max-width: 100%;
+    }
+
+    .team__btn-title {
+      @include font($fs: 20px, $fw: 600, $lh: 30px);
+      line-height: 1.2;
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+
+    .team__btn-descr {
+      margin-bottom: 10px;
+      font-weight: 500;
+    }
+
+    .team__btn-descr-sub {
+      @include font($fs: 16px, $fw: 400, $lh: 32px);
     }
   }
 }

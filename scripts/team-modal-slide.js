@@ -7,7 +7,7 @@ const removeBlock = () => {
   document.body.style.overflow = "";
 };
 
-removeBlock();
+// removeBlock();
 
 for (let i = 0; i < modalTrigger.length; i += 1) {
   modalTrigger[i].addEventListener("click", () => {

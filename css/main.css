@@ -574,6 +574,18 @@ summary {
   background-color: rgba(0, 0, 0, 0.6);
 }
 
+.backdrop {
+  display: none;
+  position: fixed;
+  z-index: 11;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
 .d-none {
   display: none;
 }
@@ -2174,6 +2186,32 @@ button {
   line-height: 1.67;
 }
 
+.team__modal .team__modal-arrow {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  display: inline-block;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: 40px;
+  color: #d1cb13;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.team__modal .team__modal-arrow_left {
+  left: 0;
+  padding-right: 15px;
+}
+
+.team__modal .team__modal-arrow_right {
+  right: 0;
+  padding-left: 15px;
+}
+
 @media screen and (min-width: 768px) {
   .team .team__list {
     margin-right: -10px;
@@ -2197,6 +2235,10 @@ button {
     font-size: 14px;
     font-weight: 400;
     line-height: 1.43;
+  }
+  .team__modal {
+    padding-left: 65px;
+    padding-right: 65px;
   }
   .team__modal .team__modal-container {
     padding-left: 15px;
@@ -2280,6 +2322,45 @@ button {
   }
   .team__modal .team__modal-img {
     float: left;
+  }
+  .team__modal {
+    display: block;
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+  .team__modal .team__modal-container {
+    max-width: 1000px;
+  }
+  .team__modal .team__modal-img {
+    float: left;
+    margin-right: 10px;
+  }
+  .team__modal .team__btn-img {
+    width: 390px;
+    height: 534px;
+  }
+  .team__modal .team__modal-text {
+    min-height: 530px;
+  }
+  .team__modal .team__btn-content {
+    max-width: 100%;
+  }
+  .team__modal .team__btn-title {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.5;
+    line-height: 1.2;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  .team__modal .team__btn-descr {
+    margin-bottom: 10px;
+    font-weight: 500;
+  }
+  .team__modal .team__btn-descr-sub {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 2;
   }
 }
 
