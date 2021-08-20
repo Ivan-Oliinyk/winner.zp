@@ -173,6 +173,7 @@
       margin-bottom: 20px;
       padding-top: 60px;
       width: 210px;
+      min-width: 18%;
 
       img {
         transform: scale(1.5);
@@ -182,6 +183,7 @@
 
     .our-servises__box-title {
       width: 160px;
+
       @include font($fs: 16px, $fw: 500, $lh: 22px);
     }
 
