@@ -5,12 +5,16 @@ const prevArrow = document.querySelectorAll(".team__modal-arrow_left");
 const nextArrow = document.querySelectorAll(".team__modal-arrow_right");
 
 const removeBlock = () => {
-  modalItem.forEach((item) => item.classList.add("d-none"));
+  modalItem.forEach((item) => {
+    item.classList.remove("fade");
+    item.classList.add("d-none");
+  });
   document.body.style.overflow = "";
 };
 
 const showItem = (itemIndex) => {
   modalItem[itemIndex].classList.remove("d-none");
+  modalItem[itemIndex].classList.add("fade");
   document.body.style.overflow = "hidden";
 };
 
