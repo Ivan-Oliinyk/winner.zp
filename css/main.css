@@ -863,11 +863,15 @@ button {
   .header .header__logo {
     margin-right: 40px;
   }
+  .header .header__logo-img {
+    width: 180px;
+    height: 43px;
+  }
   .header .header__content-list {
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 1.13;
-    margin-right: 35px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.29;
+    margin-right: 25px;
   }
   .header .header__content-item:not(:last-of-type) {
     margin-right: 20px;
@@ -899,6 +903,22 @@ button {
     padding-left: 15px;
     padding-right: 15px;
     height: 24px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .header .container {
+    max-width: 1400px;
+  }
+  .header .header__logo-img {
+    width: 240px;
+    height: 58px;
+  }
+  .header .header__content-list {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.13;
+    margin-right: 30px;
   }
 }
 
@@ -1421,6 +1441,8 @@ button {
 }
 
 .our-servises .our-servises__box-svg {
+  position: relative;
+  padding: 30px 10px 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1431,11 +1453,42 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-width: 40%;
+  width: 140px;
+  border-radius: 15px;
+  cursor: pointer;
+  -webkit-transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.our-servises .our-servises__box-svg:hover, .our-servises .our-servises__box-svg:focus {
+  -webkit-box-shadow: 0 0 7px #fff503;
+          box-shadow: 0 0 7px #fff503;
+}
+
+.our-servises .our-servises__box-svg:hover .our-servises__btn,
+.our-servises .our-servises__box-svg:focus .our-servises__btn {
+  display: block;
 }
 
 .our-servises .our-servises__box-svg img {
   margin-bottom: 12px;
+}
+
+.our-servises .our-servises__btn {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  padding: 5px 20px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  font-size: 40px;
+  color: #fff503;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
 
 .our-servises .our-servises__box-svg-wrapper {
@@ -1453,10 +1506,10 @@ button {
 }
 
 .our-servises .our-servises__box-title {
-  max-width: 120px;
-  font-size: 12px;
+  min-width: 120px;
+  font-size: 11px;
   font-weight: 500;
-  line-height: 1.25;
+  line-height: 1.36;
   text-transform: uppercase;
   text-align: center;
   color: #fff;
@@ -1497,6 +1550,7 @@ button {
   }
   .our-servises .our-servises__box-svg {
     margin-bottom: 20px;
+    padding-top: 60px;
   }
   .our-servises .our-servises__box-svg img {
     -webkit-transform: scale(1.5);
@@ -1504,7 +1558,7 @@ button {
     margin-bottom: 40px;
   }
   .our-servises .our-servises__box-title {
-    max-width: 150px;
+    width: 160px;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.38;
