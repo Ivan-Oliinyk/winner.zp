@@ -1,6 +1,12 @@
 .team {
   padding-top: 20px;
   padding-bottom: 20px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 
   .team__title {
     text-align: right;
@@ -230,6 +236,19 @@
     .team__btn-descr-sub {
       @include font($fs: 15px, $fw: 400, $lh: 26px);
     }
+
+    .team__modal-arrow {
+      font-size: 50px;
+
+      &_left {
+        left: 2%;
+        padding-right: 15px;
+      }
+      &_right {
+        right: 2%;
+        padding-left: 15px;
+      }
+    }
   }
 }
 
@@ -334,6 +353,46 @@
     .team__btn-descr-sub {
       @include font($fs: 16px, $fw: 400, $lh: 32px);
     }
+
+    .team__modal-arrow {
+      font-size: 70px;
+
+      &_left {
+        left: 5%;
+        padding-right: 15px;
+      }
+      &_right {
+        right: 5%;
+        padding-left: 15px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .team__modal {
+    .team__modal-arrow {
+      &_left {
+        left: 10%;
+      }
+      &_right {
+        right: 10%;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .team__modal {
+    font-size: 80px;
+    .team__modal-arrow {
+      &_left {
+        left: 15%;
+      }
+      &_right {
+        right: 15%;
+      }
+    }
   }
 }
 
@@ -341,6 +400,17 @@
   .team {
     .container {
       max-width: 1200px;
+    }
+  }
+
+  .team__modal {
+    .team__modal-arrow {
+      &_left {
+        left: 20%;
+      }
+      &_right {
+        right: 20%;
+      }
     }
   }
 }
