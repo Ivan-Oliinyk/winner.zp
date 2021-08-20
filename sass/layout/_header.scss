@@ -285,12 +285,16 @@
 
 @media screen and (min-width: 1920px) {
   .header {
+    .container {
+      max-width: 1800px;
+    }
+
     .header__logo {
-      margin-right: 200px;
+      margin-right: 100px;
     }
 
     .header__content-list {
-      margin-right: 335px;
+      margin-right: 200px;
     }
 
     .header__content-item {
