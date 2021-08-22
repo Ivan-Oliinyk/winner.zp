@@ -1771,7 +1771,7 @@ button {
   }
 }
 
-.fotogallary {
+.photogallery {
   max-width: 1920px;
   margin-left: auto;
   margin-right: auto;
@@ -1781,7 +1781,7 @@ button {
   color: #fff503;
 }
 
-.fotogallary .container {
+.photogallery .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1794,7 +1794,7 @@ button {
           align-items: center;
 }
 
-.fotogallary .fotogallary__title {
+.photogallery .photogallery__title {
   text-align: center;
   font-size: 13px;
   font-weight: 500;
@@ -1802,16 +1802,16 @@ button {
   margin-bottom: 15px;
 }
 
-.fotogallary .btn__fotogallary {
+.photogallery .btn__photogallery {
   color: #323131;
   display: inline-block;
 }
 
 @media screen and (min-width: 1200px) {
-  .fotogallary {
+  .photogallery {
     margin-bottom: 15px;
   }
-  .fotogallary .container {
+  .photogallery .container {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -1820,12 +1820,12 @@ button {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .fotogallary .fotogallary__title {
+  .photogallery .photogallery__title {
     font-size: 22px;
     font-weight: 500;
     line-height: 1.09;
   }
-  .fotogallary .btn__fotogallary {
+  .photogallery .btn__photogallery {
     margin-left: 40px;
   }
 }
@@ -2268,6 +2268,7 @@ button {
   top: 50%;
   left: 50%;
   padding: 10px 10px;
+  min-height: 205px;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   background-color: #fff;
@@ -2551,5 +2552,27 @@ button {
   .team__modal .team__modal-arrow_right {
     right: 20%;
   }
+}
+
+.photogallery-page .photogallery-page__wrapper {
+  padding: 40px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: -15px;
+  margin-bottom: -15px;
+}
+
+.photogallery-page .photogallery-page__img {
+  display: inline-block;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 /*# sourceMappingURL=main.css.map */

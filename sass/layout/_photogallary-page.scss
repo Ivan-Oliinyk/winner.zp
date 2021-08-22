@@ -1,0 +1,17 @@
+.photogallery-page {
+  .photogallery-page__wrapper {
+    padding: 40px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-right: -15px;
+    margin-bottom: -15px;
+  }
+
+  .photogallery-page__img {
+    display: inline-block;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    object-fit: cover;
+  }
+}

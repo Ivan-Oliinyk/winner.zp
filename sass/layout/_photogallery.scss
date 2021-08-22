@@ -1,4 +1,4 @@
-.fotogallary {
+.photogallery {
   max-width: 1920px;
   margin-left: auto;
   margin-right: auto;
@@ -13,31 +13,31 @@
     align-items: center;
   }
 
-  .fotogallary__title {
+  .photogallery__title {
     text-align: center;
     @include font($fs: 13px, $fw: 500, $lh: 24px);
     margin-bottom: 15px;
   }
 
-  .btn__fotogallary {
+  .btn__photogallery {
     color: #323131;
     display: inline-block;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .fotogallary {
+  .photogallery {
     margin-bottom: 15px;
     .container {
       flex-direction: row;
       justify-content: center;
     }
 
-    .fotogallary__title {
+    .photogallery__title {
       @include font($fs: 22px, $fw: 500, $lh: 24px);
     }
 
-    .btn__fotogallary {
+    .btn__photogallery {
       margin-left: 40px;
     }
   }
