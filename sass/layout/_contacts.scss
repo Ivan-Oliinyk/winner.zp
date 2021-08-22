@@ -6,6 +6,10 @@
   padding-bottom: 20px;
   background-color: rgba(112, 107, 107, 0.8);
 
+  // .contacts__map-frame {
+  //   min-width: 100%;
+  // }
+
   .contacts__title {
     margin-bottom: 15px;
     @include font($fs: 16px, $fw: 400, $lh: 24px);
